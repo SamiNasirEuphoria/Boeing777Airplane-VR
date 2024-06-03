@@ -1,0 +1,576 @@
+fileFormatVersion: 2
+guid: a9141c0a04e5d4874bed58282c6ddf91
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Cabin_Kitchen_1_Metal_1
+    second: {fileID: 2100000, guid: 5eecf7955025448818b60571fbd0e653, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Cabin_Passage_Ceiling
+    second: {fileID: 2100000, guid: 2e1a374ffd7b244b78cc22cba04a7141, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Ceiling
+    second: {fileID: 2100000, guid: 640abf7ea89a24cdba2dd6ac53906649, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Ceiling_2
+    second: {fileID: 2100000, guid: c75da56c5870b4c208144ee7b7032340, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Ceiling_Cell
+    second: {fileID: 2100000, guid: 1285eaa92a0134226a1afdfa4e8cdc68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Ceiling_Handles
+    second: {fileID: 2100000, guid: 0cceee9d464e944158b42471a6aa6389, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Ceiling_Light
+    second: {fileID: 2100000, guid: 6d49d822fc16241b18527d535fb28b19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Ceiling_Sign
+    second: {fileID: 2100000, guid: 7d339223ac67c40588c0ae545cccae3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Doors_Exit
+    second: {fileID: 2100000, guid: 7f7c9e0b23f38448088ffdccc2f5a272, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Doors_Handles
+    second: {fileID: 2100000, guid: fdc2899c64c354554bffc16b75ba6b85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Doors_Handles_2
+    second: {fileID: 2100000, guid: f6d98df12c0584f8ab4dce1402edc45d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Doors_Main
+    second: {fileID: 2100000, guid: 93ace6682c3f04d1bbcb394d56e37141, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Floor
+    second: {fileID: 2100000, guid: 37d4a7786e7364360a0d11aa49971992, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Floor_Caution
+    second: {fileID: 2100000, guid: 592c7611cee514819abecb9be4aa4d1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Kitchen_Bar
+    second: {fileID: 2100000, guid: cc082a1f7d7414839a64574192983326, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Kitchen_Black_Mirror
+    second: {fileID: 2100000, guid: 07bb1f87696e24846b7dcb385aa3f7f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Kitchen_Facade
+    second: {fileID: 2100000, guid: 94a32d4c3b25944b1981040c7cc18465, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Kitchen_Facade_2
+    second: {fileID: 2100000, guid: f03924b59b3024df8b18451deec24dfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Kitchen_Handle
+    second: {fileID: 2100000, guid: f6be7eed10b9c4450bbe844d17f5f259, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Kitchen_Handle_2
+    second: {fileID: 2100000, guid: e81a32d6829ff488ca1d368cbe05f4ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Kitchen_Metal_Facade
+    second: {fileID: 2100000, guid: c6f8a4a7f2de0476e86000a7cf58682b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Kitchen_Panel
+    second: {fileID: 2100000, guid: bce7eb68e36d0475c97ce82a53878362, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Kitchen_Red
+    second: {fileID: 2100000, guid: 59ce4504bba10406ab8f919ad8c00cd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Kitchen_white_side
+    second: {fileID: 2100000, guid: 5c544f43d037240a1a7d4fe37e48431d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_Ceiling_2
+    second: {fileID: 2100000, guid: 421525ba810ba4bc0a3a3da10e2c2890, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_Ceiling_Black_Plastic
+    second: {fileID: 2100000, guid: ef22c4a27337049b7bdef36bd1f8ca8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_Ceiling_Exit
+    second: {fileID: 2100000, guid: ddd2d75dd29a64b12b4b622b6712fe53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_Ceiling_Light
+    second: {fileID: 2100000, guid: 890e70915fc01478e8d51f5c2acdb64f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_Chairs
+    second: {fileID: 2100000, guid: 76b19b7a166454bbe8d8226a22cedf59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_Chairs_2
+    second: {fileID: 2100000, guid: 9795166b06fca4666a3b8557de9800a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_Chairs_Belts
+    second: {fileID: 2100000, guid: 01d6197046c45493495205c852c164e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_Chairs_Mirror
+    second: {fileID: 2100000, guid: 371125fdb75f74332b6e419c270ffe34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_Chairs_Skin
+    second: {fileID: 2100000, guid: 9a0d1fc70f5784b8ba6eba4c71646ac2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_Curtains
+    second: {fileID: 2100000, guid: 96343316e0b7346d8a6aca3dd86d4679, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_Magazine
+    second: {fileID: 2100000, guid: 93a4ae6d4caf2403bb9683a632b8d5ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_Magazine_2
+    second: {fileID: 2100000, guid: 645064bf583194e77b8cccf4c0ea57eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_Metal_Frames
+    second: {fileID: 2100000, guid: 8f9d69e0eb2e542879c1e9e53982ce29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_Red
+    second: {fileID: 2100000, guid: 089108fe44410437ab4f025019970ad5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_Screen
+    second: {fileID: 2100000, guid: f7b919eb1683c42edad4e54da2a8270c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_Walls
+    second: {fileID: 2100000, guid: d9cac4ae4137e4b6da3adab1adaa9fa3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Passage_White_Frame
+    second: {fileID: 2100000, guid: e60be80de2a82441f8c18daed84d5c8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Plane_Fuselage
+    second: {fileID: 2100000, guid: b6d009e42803b4034bf42a2959b227d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Plane_Glass
+    second: {fileID: 2100000, guid: 86ce0fffa29db4f638f3f15ea57da38f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Plane_Metal
+    second: {fileID: 2100000, guid: 0bcd4ae7c914f4e8e9f00cd0c743fcb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Sides_Bottom
+    second: {fileID: 2100000, guid: dacf7e3a05aa1491dba4e4d725d47df0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Sides_White
+    second: {fileID: 2100000, guid: 5ae40c811c1cc4712b55e12262d22c67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Sides_Window_Frame
+    second: {fileID: 2100000, guid: 754455c7900914e979f83bcdff0a155f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Toilet_Baseborard
+    second: {fileID: 2100000, guid: ca9957b4f6d5548858bb1223a14a7dad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Toilet_Floor
+    second: {fileID: 2100000, guid: 6436aa622dd2744d6ba4796f2237cfba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Toilet_Glass
+    second: {fileID: 2100000, guid: 0e4879df9b4714c0ead35803fc6e981b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Toilet_Metal
+    second: {fileID: 2100000, guid: 9456945c537b543e88e9b4d26f56fe9f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Toilet_Mirror
+    second: {fileID: 2100000, guid: e6f82333cceeb43bcbd1f86d961a1cb4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Toilet_Pan
+    second: {fileID: 2100000, guid: 9eb8ec3a89de54d0dbab72e956ac0fd8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Toilet_Paper
+    second: {fileID: 2100000, guid: badd2ae598ac34296aa2baf0ad8b49e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Toilet_Plastic
+    second: {fileID: 2100000, guid: 9be0b9480f5a7481b90bedca9495cdc2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Toilet_Plastic_2
+    second: {fileID: 2100000, guid: 6eb36fb1f0e934d9a9a251a9179cc539, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Toilet_Signs
+    second: {fileID: 2100000, guid: 2c8228dcef7094e8b8a0ce8485f7d775, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Toilet_Sink
+    second: {fileID: 2100000, guid: bfdabfd5d12a34e519e3bff2d7599336, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 777_Toilet_Wall
+    second: {fileID: 2100000, guid: 27283234246d643df84d4da70a0e91f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Black Metal
+    second: {fileID: 2100000, guid: 205daf51407c9403d845e4d835ef0644, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Black Metal.003
+    second: {fileID: 2100000, guid: 1acf156429a5e4050b44bb8c5cf035a6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Black_Metal
+    second: {fileID: 2100000, guid: c47d358d785294a57ac1547d12357a69, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Black_Plastic
+    second: {fileID: 2100000, guid: 4213a74b2f7e843c7bf23935c340277b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Black_Plastic.003
+    second: {fileID: 2100000, guid: 93a691e4bca1f482193f868a8e75bdf7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Black_leather
+    second: {fileID: 2100000, guid: 78236719128b44e169cdf06bb6685da3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Brown_Plastic.001
+    second: {fileID: 2100000, guid: a762828423e5740e9aa1496dbcc9c703, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Dark_Brown_Plastic
+    second: {fileID: 2100000, guid: 23a08d098b4bc44f49186dbb2315d32b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Door
+    second: {fileID: 2100000, guid: d358ba5abbabe457ead10ace22b66a27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Glass.002
+    second: {fileID: 2100000, guid: a9d7681d99c1b433e8bcd376429a3b00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Grey_Plastic
+    second: {fileID: 2100000, guid: 751644270bc8442e4b8d884670173d89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Light_Brown_Plastic
+    second: {fileID: 2100000, guid: 06f2cddd3226f44bea3d3ef86d838dde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Main_Metal
+    second: {fileID: 2100000, guid: b8b5f730cf1314cb789c87f8b1855b07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Metal
+    second: {fileID: 2100000, guid: 642b6e23df3c84840893cb8603ce9743, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Metal.003
+    second: {fileID: 2100000, guid: 77eae3c21a6da4e48b2e1b8258386c08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Metal_2
+    second: {fileID: 2100000, guid: 061215d11be7c4f2ab3c9002e216e476, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Panel_Light
+    second: {fileID: 2100000, guid: 44e3497aa70ba46c28af052c222d24e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Seats_Cloth
+    second: {fileID: 2100000, guid: 146fa8bfc4971481ead1982c57744f23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Seats_Fur
+    second: {fileID: 2100000, guid: d6068488949a647d0bab7109b3942bd9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Sides
+    second: {fileID: 2100000, guid: 8811ae44310964b019202caea4b0dc40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Sides_2
+    second: {fileID: 2100000, guid: 94e006e4adc9c41209fd7b21b7378543, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Sides_Screen
+    second: {fileID: 2100000, guid: ff93458cff54c4c96b91c33864831d1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Signs
+    second: {fileID: 2100000, guid: 4c1ddb56c52b74df182b31b29f691996, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_Steering_wheel
+    second: {fileID: 2100000, guid: 099c16e2c9892456fb63f129b097d361, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_White Plastic
+    second: {fileID: 2100000, guid: fdf480f6bc4434c3cbb52e1b340bb043, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_White Plastic.003
+    second: {fileID: 2100000, guid: 4f115bd97002f4102b5e244070ff0991, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: B777_C_White_leather
+    second: {fileID: 2100000, guid: 0863200b059cf4845bc9a5c96c286bed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Business_Class
+    second: {fileID: 2100000, guid: 571df4a45697843df909aeec9e5b12ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Economic_Screen
+    second: {fileID: 2100000, guid: 20fa6b83d31eb4689b2394cdc4f9729a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Economic__Chair__
+    second: {fileID: 2100000, guid: 84b9ea673e9c942539ceeb57fd6a3ad7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Executive_Chair
+    second: {fileID: 2100000, guid: 214afc934bcdc41c3b8878002d14eb14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Executive_Screen
+    second: {fileID: 2100000, guid: 38e73ff53a1e4468b9e9ccde8d0ea631, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light_Executive
+    second: {fileID: 2100000, guid: ea27d160eda1b4fc7a0daf7c3f5433a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #1
+    second: {fileID: 2100000, guid: 6e2d6d71d9d744870a85f62074babaff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material #2
+    second: {fileID: 2100000, guid: e7eea60e082a4467ca560a8f02d4c317, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
