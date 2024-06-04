@@ -20,6 +20,18 @@ public class Quiz : MonoBehaviour
     // Start is called before the first frame update
     public void EnableQuiz()
     {
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeEffect");
+        ObjectReferenceContainer.Instance.movementController.SetActive(false);
+        StartCoroutine(EnableMe());
+    }
+    IEnumerator EnableMe()
+    {
+        yield return new WaitForSeconds(2.0f);
+        ObjectReferenceContainer.Instance.airplaneObject.SetActive(false);
+        ObjectReferenceContainer.Instance.outerSphere.SetActive(true);
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(1.2f);
+        //dealing with UI
         if (!canvesGroup.blocksRaycasts)
         {
             time = resetAlpha;
@@ -27,9 +39,30 @@ public class Quiz : MonoBehaviour
             reverse = false;
             canvesGroup.alpha = resetAlpha;
             canvesGroup.blocksRaycasts = true;
-            ObjectReferenceContainer.Instance.CF2CanvesPanel.SetActive(false);
-        } 
+        }
     }
+    public void DisableQuiz()
+    {
+        if (canvesGroup.blocksRaycasts)
+        {
+            reverse = true;
+            time = setAlpha;
+            canvesGroup.alpha = setAlpha;
+            canvesGroup.blocksRaycasts = false;
+        }
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeEffect");
+        StartCoroutine(DisableMe());
+    }
+    IEnumerator DisableMe()
+    {
+        yield return new WaitForSeconds(2.0f);
+        ObjectReferenceContainer.Instance.airplaneObject.SetActive(true);
+        ObjectReferenceContainer.Instance.outerSphere.SetActive(false);
+        ObjectReferenceContainer.Instance.controlPanel.SetActive(true);
+        ObjectReferenceContainer.Instance.movementController.SetActive(true);
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeOut");
+    }
+
     void Start()
     {
         questionTextHolder.text = question;
@@ -84,18 +117,7 @@ public class Quiz : MonoBehaviour
             StartCoroutine(FadeInOut());
         } 
     }
-    public void DisableQuiz()
-    {
-        if (canvesGroup.blocksRaycasts)
-        {
-            reverse = true;
-            time = setAlpha;
-            canvesGroup.alpha = setAlpha;
-            canvesGroup.blocksRaycasts = false;
-        }
-        ObjectReferenceContainer.Instance.CF2CanvesPanel.SetActive(true);
-        ObjectReferenceContainer.Instance.controlPanel.SetActive(true);
-    }
+    
 
     [Header("Answer Panel variables")]
     //now i want to implement functionality for answer quiz

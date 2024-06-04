@@ -18,7 +18,7 @@ public class DisableMe : MonoBehaviour
     public void OnAnimationComplete()
     {
         ObjectReferenceContainer.Instance.playerCamera.SetActive(true);
-        ObjectReferenceContainer.Instance.CF2CanvesPanel.SetActive(true);
+        ObjectReferenceContainer.Instance.movementController.SetActive(true);
         ObjectReferenceContainer.Instance.controlPanel.SetActive(true);
         //UIReferenceContainer.Instance.backButton.SetActive(true);
         this.gameObject.SetActive(false);

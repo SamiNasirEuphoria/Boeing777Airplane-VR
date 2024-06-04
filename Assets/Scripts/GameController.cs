@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
             if (ObjectReferenceContainer.Instance.cutSceneGameObject)
             {
                 ObjectReferenceContainer.Instance.cutSceneGameObject.SetActive(false);
-                ObjectReferenceContainer.Instance.CF2CanvesPanel.SetActive(true);
+                ObjectReferenceContainer.Instance.movementController.SetActive(true);
                // ObjectReferenceContainer.Instance.controlPanel.SetActive(true);
                 UIReferenceContainer.Instance.narrationPanel.SetActive(true);
                 UIReferenceContainer.Instance.narrationPanel.GetComponent<NarationPanelStartScene>().enabled = true;
@@ -109,7 +109,7 @@ public class GameController : MonoBehaviour
        UIReferenceContainer.Instance.popupMessage.SetActive(true);
        //ObjectReferenceContainer.Instance.playerCamera.SetActive(false);
        //UIReferenceContainer.Instance.backButton.SetActive(false);
-       ObjectReferenceContainer.Instance.CF2CanvesPanel.SetActive(false);
+       ObjectReferenceContainer.Instance.movementController.SetActive(false);
        ObjectReferenceContainer.Instance.controlPanel.SetActive(false);
         StartCoroutine(CheckList());
     }

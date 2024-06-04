@@ -118,7 +118,7 @@ public class TutorialController : MonoBehaviour
     public void EndTutorial()
     {
         GameController.startGame = true;
-        ObjectReferenceContainer.Instance.CF2CanvesPanel.SetActive(true);
+        ObjectReferenceContainer.Instance.movementController.SetActive(true);
         //ObjectReferenceContainer.Instance.controlPanel.SetActive(true);
         UIReferenceContainer.Instance.narrationPanel.SetActive(true);
         UIReferenceContainer.Instance.narrationPanel.GetComponent<NarationPanelStartScene>().enabled = true;

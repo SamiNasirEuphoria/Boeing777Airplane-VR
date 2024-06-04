@@ -5806,7 +5806,7 @@ GameObject:
   - component: {fileID: 933894332}
   - component: {fileID: 933894333}
   m_Layer: 0
-  m_Name: CF2-Canvas
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5833,7 +5833,7 @@ RectTransform:
   - {fileID: 1020222131}
   - {fileID: 165678254}
   m_Father: {fileID: 4883747957682468689}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9043,12 +9043,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeEffect: {fileID: 1605108909}
+  outerSphere: {fileID: 1813573135}
+  airplaneObject: {fileID: 8857163785223316784}
   cutSceneGameObject: {fileID: 634000376}
   cutSceneView: {fileID: 759869345}
   oxygenMask: {fileID: 0}
   playerCamera: {fileID: 0}
   secondCamera: {fileID: 0}
-  CF2CanvesPanel: {fileID: 1974169717}
+  movementController: {fileID: 323879368563786408}
   controlPanel: {fileID: 147807369}
   directionalLines: {fileID: 0}
   checkList: {fileID: 0}
@@ -12921,7 +12923,6 @@ GameObject:
   - component: {fileID: 1813573136}
   - component: {fileID: 1813573139}
   - component: {fileID: 1813573138}
-  - component: {fileID: 1813573137}
   m_Layer: 0
   m_Name: 360-Sphere
   m_TagString: Untagged
@@ -12938,33 +12939,12 @@ Transform:
   m_GameObject: {fileID: 1813573135}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.7015, y: 5.7015, z: 5.7015}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4883747957682468689}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1813573137
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1813573135}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 025d80fca3a264c499c335daae8d7d0a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!23 &1813573138
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29429,8 +29409,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1605108908}
-  - {fileID: 933894328}
   - {fileID: 1813573136}
+  - {fileID: 933894328}
   m_Father: {fileID: 4883747957499538288}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

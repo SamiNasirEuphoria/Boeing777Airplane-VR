@@ -13,7 +13,6 @@ public class NarationPanelStartScene : MonoBehaviour
     void Start()
     {
         canvesGroup = GetComponent<CanvasGroup>();
-
     }
     IEnumerator SetinActivePanel()
     {
@@ -54,6 +53,18 @@ public class NarationPanelStartScene : MonoBehaviour
     }
     public void EnablePanel()
     {
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeEffect");
+        ObjectReferenceContainer.Instance.movementController.SetActive(false);
+        StartCoroutine(EnableMe());
+    }
+    IEnumerator EnableMe()
+    {
+        yield return new WaitForSeconds(2.0f);
+        ObjectReferenceContainer.Instance.airplaneObject.SetActive(false);
+        ObjectReferenceContainer.Instance.outerSphere.SetActive(true);
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(1.2f);
+        //dealing with UI
         if (!canvesGroup.blocksRaycasts)
         {
             time = resetAlpha;
@@ -61,9 +72,7 @@ public class NarationPanelStartScene : MonoBehaviour
             reverse = false;
             canvesGroup.alpha = resetAlpha;
             canvesGroup.blocksRaycasts = true;
-            //StartCoroutine(SetinActivePanel());
         }
-        ObjectReferenceContainer.Instance.CF2CanvesPanel.SetActive(false);
     }
     public void DisablePanel()
     {
@@ -73,11 +82,17 @@ public class NarationPanelStartScene : MonoBehaviour
             time = setAlpha;
             canvesGroup.alpha = setAlpha;
             canvesGroup.blocksRaycasts = false;
-            //ObjectReferenceContainer.Instance.cameraController.enabled = true;
-            
         }
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeEffect");
+        StartCoroutine(DisableMe());
+    }
+    IEnumerator DisableMe()
+    {
+        yield return new WaitForSeconds(2.0f);
+        ObjectReferenceContainer.Instance.airplaneObject.SetActive(true);
+        ObjectReferenceContainer.Instance.outerSphere.SetActive(false);
         ObjectReferenceContainer.Instance.controlPanel.SetActive(true);
-        ObjectReferenceContainer.Instance.CF2CanvesPanel.SetActive(true);
-        //make a call to popup window here with a slight delay
+        ObjectReferenceContainer.Instance.movementController.SetActive(true);
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeOut");
     }
 }

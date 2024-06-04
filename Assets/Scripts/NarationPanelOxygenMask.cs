@@ -64,7 +64,7 @@ public class NarationPanelOxygenMask : MonoBehaviour
             canvesGroup.blocksRaycasts = true;
             //StartCoroutine(SetinActivePanel());
         }
-        ObjectReferenceContainer.Instance.CF2CanvesPanel.SetActive(false);
+        ObjectReferenceContainer.Instance.movementController.SetActive(false);
     }
     public void DisablePanel()
     {
@@ -75,7 +75,7 @@ public class NarationPanelOxygenMask : MonoBehaviour
             canvesGroup.alpha = setAlpha;
             canvesGroup.blocksRaycasts = false;
         }
-        ObjectReferenceContainer.Instance.CF2CanvesPanel.SetActive(true);
+        ObjectReferenceContainer.Instance.movementController.SetActive(true);
         ObjectReferenceContainer.Instance.controlPanel.SetActive(true);
     }
 }

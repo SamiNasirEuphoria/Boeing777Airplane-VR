@@ -42,6 +42,19 @@ public class ConfirmationPanel : MonoBehaviour
     }
     public void EnablePanel()
     {
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeEffect");
+        ObjectReferenceContainer.Instance.movementController.SetActive(false);
+        ObjectReferenceContainer.Instance.controlPanel.SetActive(false);
+        StartCoroutine(EnableMe());
+    }
+    IEnumerator EnableMe()
+    {
+        yield return new WaitForSeconds(2.0f);
+        ObjectReferenceContainer.Instance.airplaneObject.SetActive(false);
+        ObjectReferenceContainer.Instance.outerSphere.SetActive(true);
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(1.2f);
+        //dealing with UI
         if (!canvesGroup.blocksRaycasts)
         {
             time = resetAlpha;
@@ -49,12 +62,9 @@ public class ConfirmationPanel : MonoBehaviour
             reverse = false;
             canvesGroup.alpha = resetAlpha;
             canvesGroup.blocksRaycasts = true;
-            canvesGroup.interactable = true;
         }
-        ObjectReferenceContainer.Instance.CF2CanvesPanel.SetActive(false);
-        ObjectReferenceContainer.Instance.controlPanel.SetActive(false);
-        //UIReferenceContainer.Instance.backButton.SetActive(false);
     }
+    //the only difference bw yes and no is just control panel 
     public void DisablePanelNo()
     {
         if (canvesGroup.blocksRaycasts)
@@ -63,10 +73,18 @@ public class ConfirmationPanel : MonoBehaviour
             time = setAlpha;
             canvesGroup.alpha = setAlpha;
             canvesGroup.blocksRaycasts = false;
-            canvesGroup.interactable = false;
         }
-        ObjectReferenceContainer.Instance.CF2CanvesPanel.SetActive(true);
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeEffect");
+        StartCoroutine(DisableMe());
+    }
+    IEnumerator DisableMe()
+    {
+        yield return new WaitForSeconds(2.0f);
+        ObjectReferenceContainer.Instance.airplaneObject.SetActive(true);
+        ObjectReferenceContainer.Instance.outerSphere.SetActive(false);
         ObjectReferenceContainer.Instance.controlPanel.SetActive(true);
+        ObjectReferenceContainer.Instance.movementController.SetActive(true);
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeOut");
     }
     public void DisbalePanelYes()
     {
@@ -77,6 +95,15 @@ public class ConfirmationPanel : MonoBehaviour
             canvesGroup.alpha = setAlpha;
             canvesGroup.blocksRaycasts = false;
         }
-        ObjectReferenceContainer.Instance.CF2CanvesPanel.SetActive(true);
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeEffect");
+        StartCoroutine(_DisableMe());
+    }
+    IEnumerator _DisableMe()
+    {
+        yield return new WaitForSeconds(2.0f);
+        ObjectReferenceContainer.Instance.airplaneObject.SetActive(true);
+        ObjectReferenceContainer.Instance.outerSphere.SetActive(false);
+        ObjectReferenceContainer.Instance.movementController.SetActive(true);
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeOut");
     }
 }

@@ -63,7 +63,7 @@ public class CheckList : MonoBehaviour
             reverse = false;
             canvesGroup.alpha = resetAlpha;
             canvesGroup.blocksRaycasts = true;
-            ObjectReferenceContainer.Instance.CF2CanvesPanel.SetActive(false);
+            ObjectReferenceContainer.Instance.movementController.SetActive(false);
             ObjectReferenceContainer.Instance.controlPanel.SetActive(false);
             UIReferenceContainer.Instance.backButton.SetActive(false);
         }
