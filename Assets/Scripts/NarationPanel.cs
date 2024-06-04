@@ -51,6 +51,18 @@ public class NarationPanel : MonoBehaviour
     }
     public void EnablePanel()
     {
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeEffect");
+        ObjectReferenceContainer.Instance.movementController.SetActive(false);
+        StartCoroutine(EnableMe());
+    }
+    IEnumerator EnableMe()
+    {
+        yield return new WaitForSeconds(2.0f);
+        ObjectReferenceContainer.Instance.airplaneObject.SetActive(false);
+        ObjectReferenceContainer.Instance.outerSphere.SetActive(true);
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(1.2f);
+        //dealing with UI
         if (!canvesGroup.blocksRaycasts)
         {
             time = resetAlpha;
@@ -58,9 +70,7 @@ public class NarationPanel : MonoBehaviour
             reverse = false;
             canvesGroup.alpha = resetAlpha;
             canvesGroup.blocksRaycasts = true;
-            //StartCoroutine(SetinActivePanel());
         }
-        ObjectReferenceContainer.Instance.movementController.SetActive(false);
     }
     public void DisablePanel()
     {
@@ -70,9 +80,17 @@ public class NarationPanel : MonoBehaviour
             time = setAlpha;
             canvesGroup.alpha = setAlpha;
             canvesGroup.blocksRaycasts = false;
-            ObjectReferenceContainer.Instance.cameraController.enabled = true;
         }
-        ObjectReferenceContainer.Instance.movementController.SetActive(true);
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeEffect");
+        StartCoroutine(DisableMe());
+    }
+    IEnumerator DisableMe()
+    {
+        yield return new WaitForSeconds(2.0f);
+        ObjectReferenceContainer.Instance.airplaneObject.SetActive(true);
+        ObjectReferenceContainer.Instance.outerSphere.SetActive(false);
         ObjectReferenceContainer.Instance.controlPanel.SetActive(true);
+        ObjectReferenceContainer.Instance.movementController.SetActive(true);
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeOut");
     }
 }

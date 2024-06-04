@@ -49,6 +49,7 @@ public class ConclusionPanel : MonoBehaviour
             }
         }
     }
+    
     public void EnablePanel()
     {
         if (!canvesGroup.blocksRaycasts)
@@ -58,10 +59,31 @@ public class ConclusionPanel : MonoBehaviour
             reverse = false;
             canvesGroup.alpha = resetAlpha;
             canvesGroup.blocksRaycasts = true;
-            //StartCoroutine(SetinActivePanel());
         }
-        UIReferenceContainer.Instance.backButton.SetActive(false);
+        //ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeEffect");
+        //ObjectReferenceContainer.Instance.movementController.SetActive(false);
+        //UIReferenceContainer.Instance.backButton.SetActive(false);
+        //StartCoroutine(EnableMe());
     }
+    IEnumerator EnableMe()
+    {
+        yield return new WaitForSeconds(2.0f);
+        ObjectReferenceContainer.Instance.airplaneObject.SetActive(false);
+        ObjectReferenceContainer.Instance.outerSphere.SetActive(true);
+        
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(1.2f);
+        //dealing with UI
+        if (!canvesGroup.blocksRaycasts)
+        {
+            time = resetAlpha;
+            forward = true;
+            reverse = false;
+            canvesGroup.alpha = resetAlpha;
+            canvesGroup.blocksRaycasts = true;
+        }
+    }
+   
     public void DisablePanel()
     {
         if (canvesGroup.blocksRaycasts)
@@ -70,10 +92,19 @@ public class ConclusionPanel : MonoBehaviour
             time = setAlpha;
             canvesGroup.alpha = setAlpha;
             canvesGroup.blocksRaycasts = false;
-            ObjectReferenceContainer.Instance.cameraController.enabled = true;
-            
         }
-        //UIReferenceContainer.Instance.backButton.SetActive(true);
-        UIReferenceContainer.Instance.confirmationPanelLast.GetComponent<ConfirmationPanel>().EnablePanel();
+        //ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeEffect");
+        StartCoroutine(DisableMe());
+    }
+    IEnumerator DisableMe()
+    {
+        yield return new WaitForSeconds(2.0f);
+        UIReferenceContainer.Instance.confirmationPanelLast.GetComponent<ConfirmationPanelLast>().EnablePanel();
+        //ObjectReferenceContainer.Instance.cameraController.enabled = true;
+        //ObjectReferenceContainer.Instance.airplaneObject.SetActive(true);
+        //ObjectReferenceContainer.Instance.outerSphere.SetActive(false);
+        //ObjectReferenceContainer.Instance.controlPanel.SetActive(true);
+        //ObjectReferenceContainer.Instance.movementController.SetActive(true);
+        //ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeOut");
     }
 }

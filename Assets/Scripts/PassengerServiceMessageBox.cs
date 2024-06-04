@@ -62,7 +62,6 @@ public class PassengerServiceMessageBox : MonoBehaviour
             reverse = false;
             canvesGroup.alpha = resetAlpha;
             canvesGroup.blocksRaycasts = true;
-            //StartCoroutine(SetinActivePanel());
         }
     }
     public void DisablePanel()
@@ -73,7 +72,6 @@ public class PassengerServiceMessageBox : MonoBehaviour
             time = setAlpha;
             canvesGroup.alpha = setAlpha;
             canvesGroup.blocksRaycasts = false;
-            //ObjectReferenceContainer.Instance.cameraController.enabled = true;
         }
     }
 }

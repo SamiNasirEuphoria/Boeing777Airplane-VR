@@ -94,6 +94,7 @@ public class GameController : MonoBehaviour
             //Quaternion instantiateRotation = Camera.main.transform.rotation;
             //GameObject newObject = Instantiate(objectToInstantiate, obj+new Vector3(0,2.5f,0), instantiateRotation);
             GameObject newObject = Instantiate(oxygenMask, obj + new Vector3(0, 2.5f, 0), Quaternion.identity);
+            newObject.transform.SetParent(ObjectReferenceContainer.Instance.airplaneObject.transform);
 
         }
         if (maskCount % 3 == 0)
@@ -110,6 +111,7 @@ public class GameController : MonoBehaviour
        //ObjectReferenceContainer.Instance.playerCamera.SetActive(false);
        //UIReferenceContainer.Instance.backButton.SetActive(false);
        ObjectReferenceContainer.Instance.movementController.SetActive(false);
+        //UIReferenceContainer.Instance.exitAreaIndicator.gameObject.SetActive(false);
        ObjectReferenceContainer.Instance.controlPanel.SetActive(false);
         StartCoroutine(CheckList());
     }
@@ -216,31 +218,38 @@ public class GameController : MonoBehaviour
     }
     public void SetColor()
     {
-        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeIn");
+        
         StartCoroutine(Wait());
         check = !check;
         _check = false;
     }
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(2.5f);
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeIn");
         SceneChanger.Instance.ChangeScene("URP-Scene-Color-VR");
     }
     public void SetSeat()
     {
-        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeIn");
+        
         StartCoroutine(_Wait());
         _check = !_check;
         check = false;
     }
     IEnumerator _Wait()
     {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(2.5f);
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeIn");
         SceneChanger.Instance.ChangeScene("URP-Scene-Seat-VR");
     }
     public void DropMaskCheck()
     {
         _check = false;
+        StartCoroutine(Wait_());
+    }
+    IEnumerator Wait_()
+    {
+        yield return new WaitForSeconds(2.5f);
         ObjectReferenceContainer.Instance.directionalLines.SetActive(true);
         UIReferenceContainer.Instance.popupMessage.GetComponent<PopUpMessage>().textToShow = "Follow the arrows";
         UIReferenceContainer.Instance.popupMessage.SetActive(true);

@@ -13,7 +13,7 @@ EditorBuildSettings:
     guid: af8f5a5ec1f4a4e339a0068b4046a32d
   - enabled: 1
     path: Assets/0.VR_Assets/Scenes/URP-Scene-VR.unity
-    guid: 282f58346bf6b4749a01b63aa1dfa7c9
+    guid: 1aa23a17c575f455ca5334024fedda94
   - enabled: 1
     path: Assets/0.VR_Assets/Scenes/URP-Scene-Color-VR.unity
     guid: 0a57a1ac8287d44c7b3bb55774beeaec

@@ -54,8 +54,23 @@ public class CheckList : MonoBehaviour
     }
     public void EnablePanel()
     {
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeEffect");
+        ObjectReferenceContainer.Instance.movementController.SetActive(false);
+        StartCoroutine(EnableMe());
+    }
+    IEnumerator EnableMe()
+    {
+        yield return new WaitForSeconds(2.0f);
         UIReferenceContainer.Instance.exitAreaMessage.SetActive(false);
         UIReferenceContainer.Instance.CF2Panel.SetActive(false);
+        ObjectReferenceContainer.Instance.movementController.SetActive(false);
+        ObjectReferenceContainer.Instance.controlPanel.SetActive(false);
+        UIReferenceContainer.Instance.backButton.SetActive(false);
+        ObjectReferenceContainer.Instance.airplaneObject.SetActive(false);
+        ObjectReferenceContainer.Instance.outerSphere.SetActive(true);
+        ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(1.2f);
+        //dealing with UI
         if (!canvesGroup.blocksRaycasts)
         {
             time = resetAlpha;
@@ -63,9 +78,6 @@ public class CheckList : MonoBehaviour
             reverse = false;
             canvesGroup.alpha = resetAlpha;
             canvesGroup.blocksRaycasts = true;
-            ObjectReferenceContainer.Instance.movementController.SetActive(false);
-            ObjectReferenceContainer.Instance.controlPanel.SetActive(false);
-            UIReferenceContainer.Instance.backButton.SetActive(false);
         }
     }
     public void DisablePanel()
@@ -82,9 +94,6 @@ public class CheckList : MonoBehaviour
     IEnumerator BackToMainScene()
     {
         yield return new WaitForSeconds(3.5f);
-        //SceneChanger.Instance.ChangeScene("URP-Scene (Conclusion)");
-        //UIReferenceContainer.Instance.fadeScreenEffect.SetActive(true);
-        //ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeIn");
         UIReferenceContainer.Instance.narationPanelConclusion.SetActive(true);
     }
 }
