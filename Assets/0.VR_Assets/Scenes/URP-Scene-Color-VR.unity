@@ -26213,7 +26213,7 @@ MonoBehaviour:
   m_UIScroll: {fileID: -6756787485274679044, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   m_SmoothMotionEnabled: 0
-  m_SmoothTurnEnabled: 1
+  m_SmoothTurnEnabled: 0
   m_UIScrollingEnabled: 1
   m_RayInteractorChanged:
     m_PersistentCalls:
@@ -30290,7 +30290,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983572187}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.6230001, z: 0}
+  m_LocalPosition: {x: 0, y: 2.05, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
