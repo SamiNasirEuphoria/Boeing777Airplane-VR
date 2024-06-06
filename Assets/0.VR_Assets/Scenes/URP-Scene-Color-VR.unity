@@ -16526,7 +16526,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1290100048
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16984,6 +16984,7 @@ GameObject:
   - component: {fileID: 1304829118}
   - component: {fileID: 1304829117}
   - component: {fileID: 1304829116}
+  - component: {fileID: 1304829121}
   m_Layer: 0
   m_Name: Teleport Interactor
   m_TagString: Untagged
@@ -17633,6 +17634,19 @@ Transform:
   m_Father: {fileID: 1446025615}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1304829121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304829114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf2b568d5beb4fbfb399145015d4339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myLine: {fileID: 1304829119}
 --- !u!1 &1319365988
 GameObject:
   m_ObjectHideFlags: 0
@@ -22290,7 +22304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1568796449
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26953,6 +26967,7 @@ GameObject:
   - component: {fileID: 1787890214}
   - component: {fileID: 1787890213}
   - component: {fileID: 1787890212}
+  - component: {fileID: 1787890217}
   m_Layer: 0
   m_Name: Teleport Interactor
   m_TagString: Untagged
@@ -27602,6 +27617,19 @@ Transform:
   m_Father: {fileID: 1753063447}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1787890217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787890210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf2b568d5beb4fbfb399145015d4339, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myLine: {fileID: 1787890215}
 --- !u!1 &1799101108
 GameObject:
   m_ObjectHideFlags: 0
