@@ -24,9 +24,19 @@ public class Quiz : MonoBehaviour
         ObjectReferenceContainer.Instance.movementController.SetActive(false);
         StartCoroutine(EnableMe());
     }
+    public void UpdateCanvas()
+    {
+        GameObject camreferenceObject = ObjectReferenceContainer.Instance.CamReference;
+        ObjectReferenceContainer.Instance.mainCanvas.transform.position = new Vector3(camreferenceObject.transform.position.x,
+                                          camreferenceObject.transform.position.y,
+                                          camreferenceObject.transform.position.z);
+        Quaternion rot = Quaternion.LookRotation(camreferenceObject.transform.forward, Vector3.up);
+        ObjectReferenceContainer.Instance.mainCanvas.transform.rotation = rot;
+    }
     IEnumerator EnableMe()
     {
         yield return new WaitForSeconds(2.0f);
+        UpdateCanvas();
         ObjectReferenceContainer.Instance.airplaneObject.SetActive(false);
         ObjectReferenceContainer.Instance.outerSphere.SetActive(true);
         ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeOut");

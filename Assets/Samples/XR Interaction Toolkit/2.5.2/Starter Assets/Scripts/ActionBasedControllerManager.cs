@@ -410,12 +410,12 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         {
             // Disable/enable Teleport and Turn when Move is enabled/disabled.
             SetEnabled(m_Move, m_SmoothMotionEnabled);
-            //SetEnabled(m_TeleportModeActivate, !m_SmoothMotionEnabled);
-            //SetEnabled(m_TeleportModeCancel, !m_SmoothMotionEnabled);
+            SetEnabled(m_TeleportModeActivate, !m_SmoothMotionEnabled);
+            SetEnabled(m_TeleportModeCancel, !m_SmoothMotionEnabled);
 
             //self added lines
-            SetEnabled(m_TeleportModeActivate, false);
-            SetEnabled(m_TeleportModeCancel, false);
+            //SetEnabled(m_TeleportModeActivate, false);
+            //SetEnabled(m_TeleportModeCancel, false);
             // Disable ability to turn when using continuous movement
             SetEnabled(m_Turn, !m_SmoothMotionEnabled && m_SmoothTurnEnabled);
             SetEnabled(m_SnapTurn, !m_SmoothMotionEnabled && !m_SmoothTurnEnabled);

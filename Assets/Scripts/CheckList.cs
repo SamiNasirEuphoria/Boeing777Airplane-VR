@@ -52,6 +52,15 @@ public class CheckList : MonoBehaviour
             }
         }
     }
+    public void UpdateCanvas()
+    {
+        GameObject camreferenceObject = ObjectReferenceContainer.Instance.CamReference;
+        ObjectReferenceContainer.Instance.mainCanvas.transform.position = new Vector3(camreferenceObject.transform.position.x,
+                                          camreferenceObject.transform.position.y,
+                                          camreferenceObject.transform.position.z);
+        Quaternion rot = Quaternion.LookRotation(camreferenceObject.transform.forward, Vector3.up);
+        ObjectReferenceContainer.Instance.mainCanvas.transform.rotation = rot;
+    }
     public void EnablePanel()
     {
         ObjectReferenceContainer.Instance.fadeEffect.SetTrigger("FadeEffect");
@@ -61,6 +70,7 @@ public class CheckList : MonoBehaviour
     IEnumerator EnableMe()
     {
         yield return new WaitForSeconds(2.0f);
+        UpdateCanvas();
         UIReferenceContainer.Instance.exitAreaMessage.SetActive(false);
         UIReferenceContainer.Instance.CF2Panel.SetActive(false);
         ObjectReferenceContainer.Instance.movementController.SetActive(false);

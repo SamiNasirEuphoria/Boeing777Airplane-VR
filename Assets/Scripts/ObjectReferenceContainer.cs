@@ -24,7 +24,7 @@ public class ObjectReferenceContainer : MonoBehaviour
     }
     #endregion
     public Animator fadeEffect;
-    public GameObject outerSphere,airplaneObject,cutSceneGameObject, cutSceneView, oxygenMask,playerCamera,secondCamera,
+    public GameObject mainCanvas,CamReference,outerSphere,airplaneObject,cutSceneGameObject, cutSceneView, oxygenMask,playerCamera,secondCamera,
         movementController,controlPanel, directionalLines, checkList, passengerServiceAreaCollider;
     public Material textileFloor, nonTextileFloor, greenColor, whiteColor, defaultBusinessChair, businessChair, defaultExecutiveChair, executiveChair, defaultEconomyChair, economyChair;
     public CameraController cameraController;

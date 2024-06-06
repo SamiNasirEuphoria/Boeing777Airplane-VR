@@ -9854,7 +9854,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\u2022 Move around the airplane cabin using the arrows on the joystick
+  m_text: "\n\u2022 Move around the aeroplane cabin using the arrows on the joystick
     and tap on the red + icons to review and test each of the modifications made
     to the cabin.\n\n\u2022 Click on the red + icons whenever you see them to proceed.\n\n\u2022
     When you see a lightbulb, answer the question correctly to complete the exercise."
@@ -23876,7 +23876,7 @@ MonoBehaviour:
   m_SetLineColorGradient: 1
   m_ValidColorGradient:
     serializedVersion: 2
-    key0: {r: 0.1999999, g: 1, b: 0, a: 1}
+    key0: {r: 0, g: 0.7445183, b: 1, a: 1}
     key1: {r: 1, g: 1, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
