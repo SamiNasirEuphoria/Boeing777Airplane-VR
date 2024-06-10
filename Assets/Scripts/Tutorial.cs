@@ -4,9 +4,9 @@ using UnityEngine.UI;
 
 public class Tutorial : MonoBehaviour
 {
-    public CanvasGroup firstCanvasGroup, secondCanvasGroup, thirdCanvasGroup;
+    public CanvasGroup firstCanvasGroup, secondCanvasGroup, thirdCanvasGroup, fourthCanvesGroup;
 
-    public Button firstNextButton, secondNextButton, thirdNextButton;
+    public Button firstNextButton, secondNextButton, thirdNextButton, fourthNextButton;
     public Animator myAnimator;
     public float fadeDuration, startSceneConfig;
 
@@ -16,11 +16,13 @@ public class Tutorial : MonoBehaviour
         InitializeCanvasGroup(firstCanvasGroup, false);
         InitializeCanvasGroup(secondCanvasGroup, false);
         InitializeCanvasGroup(thirdCanvasGroup, false);
+        InitializeCanvasGroup(fourthCanvesGroup, false);
         StartCoroutine(Fade(firstCanvasGroup, 1));
         // Set up button listeners
         firstNextButton.onClick.AddListener(FirstNextButton);
         secondNextButton.onClick.AddListener(SecondNextButton);
         thirdNextButton.onClick.AddListener(ThirdNextButton);
+        fourthNextButton.onClick.AddListener(FourthNextButton);
 
     }
     public void FirstNextButton()
@@ -34,6 +36,11 @@ public class Tutorial : MonoBehaviour
         HideCanvasGroup(secondCanvasGroup);
     }
     public void ThirdNextButton()
+    {
+        ShowCanvasGroup(fourthCanvesGroup);
+        HideCanvasGroup(thirdCanvasGroup);
+    }
+    public void FourthNextButton()
     {
         StartExperience();
     }

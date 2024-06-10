@@ -14177,7 +14177,7 @@ MonoBehaviour:
   checkList: {fileID: 0}
   passengerServiceAreaCollider: {fileID: 0}
   textileFloor: {fileID: 2100000, guid: 592c7611cee514819abecb9be4aa4d1e, type: 2}
-  nonTextileFloor: {fileID: 2100000, guid: 6e2d6d71d9d744870a85f62074babaff, type: 2}
+  nonTextileFloor: {fileID: 2100000, guid: 5ad2ae4d042ef41328c1707e8d929094, type: 2}
   greenColor: {fileID: 2100000, guid: 4d6c3227efdff41beae85c1d312d3915, type: 2}
   whiteColor: {fileID: 2100000, guid: 5c5e4f74aa7714b71a09a0ca721be94a, type: 2}
   defaultBusinessChair: {fileID: 0}
